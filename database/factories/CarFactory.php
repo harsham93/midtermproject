@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: harsha
+ * Date: 3/25/18
+ * Time: 5:37 PM
+ */
+
 
 use Faker\Generator as Faker;
 
@@ -13,11 +20,11 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Car::class, function (Faker $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'password' => '$2y$10TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'Make' => $faker->ford,
+        'Model' => $faker->unique()->safeEmail,
+        'Year' => '', // secret
         'remember_token' => str_random(10),
     ];
 });
