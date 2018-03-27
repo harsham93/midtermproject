@@ -22,9 +22,9 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Car::class, function (Faker $faker) {
     return [
-        'Make' => $faker->ford,
-        'Model' => $faker->unique()->safeEmail,
-        'Year' => '', // secret
-        'remember_token' => str_random(10),
+        'make' => $faker->make,
+        'model' => $faker->model,
+        'year' => $faker->year, // secret
+
     ];
 });
