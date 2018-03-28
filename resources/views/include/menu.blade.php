@@ -19,18 +19,15 @@
 
         <form class="form-inline my-2 my-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="{{route('register')}}">SignUp</a>
+                <a class="nav-link" href="{{route('register')}}">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('login')}}">SignIn</a>
+                <a class="nav-link" href="{{route('login')}}">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('index')}}">Logout</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('viewmessage')}}">View Messages</a>
-            </li>
-            <li><a href="{{route('thanks',['name' => 'IS601' ])}}">Thanks</a></li>
+
         </form>
     </div>
 </nav>
