@@ -6,7 +6,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class RegisterTest extends TestCase
+class PageTest extends TestCase
 {
     /**
      * A basic test example.
@@ -25,4 +25,11 @@ class RegisterTest extends TestCase
 
         $response->assertStatus(200);
     }
+    public function testAbout()
+    {
+        $response = $this->get('/about');
+
+        $response->assertStatus(200);
+    }
+
 }
