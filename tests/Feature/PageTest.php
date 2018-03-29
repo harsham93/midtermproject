@@ -31,5 +31,11 @@ class PageTest extends TestCase
 
         $response->assertStatus(200);
     }
+    public function testContac()
+    {
+        $response = $this->get('/contact');
+
+        $response->assertStatus(200);
+    }
 
 }
