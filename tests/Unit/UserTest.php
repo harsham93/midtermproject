@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\User;
+Use App\User;
 
 class UserTest extends TestCase
 {
@@ -17,10 +17,10 @@ class UserTest extends TestCase
     public function testExample()
     {
         $user = new User();
-        $user->name = 'name';
-        $user->email = 'email';
-        $user->password = 'password';
-        $user->remember_token = 'token';
-        $this->assertTrue($user -> save());
+        $user->name = 'Harsha Mirani';
+        $user->email = 'ham38@njit.edu';
+        $user->password = 'jfidfoe';
+        $this->assertTrue($user->save());
     }
+
 }
