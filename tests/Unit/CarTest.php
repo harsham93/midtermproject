@@ -14,9 +14,13 @@ class CarTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testInsert()
     {
-        $this->assertTrue(true);
+        $user = new Car();
+        $user->make = 'honda';
+        $user->model = 'abcd';
+        $user->year = '2018';
+        $this->assertTrue($user->save());
     }
 
 }
