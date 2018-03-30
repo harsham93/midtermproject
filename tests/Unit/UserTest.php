@@ -23,4 +23,5 @@ class UserTest extends TestCase
         $this->assertTrue($user->save());
     }
 
+
 }
